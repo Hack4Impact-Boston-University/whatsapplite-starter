@@ -27,6 +27,7 @@ export default class Conversation extends React.Component {
             <GiftedChat
             messages={this.state.messages}
             onSend={(message) => this.sendMessage(message[0].text)}
+            inverted={false}
             />
         )
     }
