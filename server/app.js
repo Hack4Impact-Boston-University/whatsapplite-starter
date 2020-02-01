@@ -3,12 +3,13 @@ const io = require("socket.io")(port);
 
 console.log("Server running on port " + port);
 
-io.on("connection", function() {
+io.on("connection", function(socket) {
 
     console.log("User connected");
 
-     socket.on("message", function(){
+     socket.on("message", function(data){
          console.log("Message received");
+         console.log(data);
      })
  })
 
