@@ -5,9 +5,16 @@ import Socket from "../socket";
 
 export default class Conversation extends React.Component {
 
-    constructor() {
+    constructor(props) {
         super();
-        this.socket = new Socket();
+        this.state = {
+            messages: []
+        }
+        this.socket = new Socket(props.navigation.state.params.displayName);
+        this.socket.socket.on("message", (message) => {
+            const updatedMessages = [...this.state.messages, message];
+            this.setState({messages: updatedMessages})
+        })
     }
 
 
@@ -18,6 +25,7 @@ export default class Conversation extends React.Component {
     render() {
         return (
             <GiftedChat
+            messages={this.state.messages}
             onSend={(message) => this.sendMessage(message[0].text)}
             />
         )

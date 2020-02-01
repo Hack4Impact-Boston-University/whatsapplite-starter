@@ -6,12 +6,13 @@ class Socket {
 
     socket = null;
     
-    constructor() {
+    constructor(displayName) {
         this.socket = io(apiUrl);
+        this.displayName = displayName;
     }
 
     sendMessage(message) {
-        this.socket.emit("message", message);
+        this.socket.emit("message", {username: this.displayName, message: message});
     }
 
 }
