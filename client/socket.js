@@ -1,6 +1,6 @@
 import io from "./socket.io"
 
-const apiUrl = "http://localhost:3050";
+const apiUrl = "http://155.41.31.211:3050";
  
 class Socket {
 

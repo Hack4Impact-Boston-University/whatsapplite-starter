@@ -12,7 +12,7 @@ export default class Conversation extends React.Component {
 
 
     sendMessage(message) {
-        alert(message);
+        this.socket.sendMessage(message);
     }
 
     render() {
