@@ -1,3 +1,20 @@
+## Hack4Impact Spring '20 Bootcamp challenge
+
+## Bootcamp deliverable - due Feb 8th, 2020
+
+For this project, we would like you to take the starter code and extend it so that we can send private messages. For example, you should be able to look up a receipient by email or username and then start a conversation thread with them. 
+</br>
+
+### Requirements:
+Send messages privately 
+
+### Nice to have
+Persist conversation history
+
+### Tips
+Thoroughly read through the documents at https://socket.io/docs/, and look over https://socket.io/docs/emit-cheatsheet/. In order to look up users by their username or email address, you may need to implement a login system. To send messages privately, you will need the server to keep track of socket ids for each user when they sign on to the application.
+
+
 ## Getting started
 
 Install the following programs to setup your machine for the bootcamp.
