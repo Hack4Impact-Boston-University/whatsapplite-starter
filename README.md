@@ -12,7 +12,10 @@ Send messages privately
 Persist conversation history
 
 ### Tips
-Thoroughly read through the documents at https://socket.io/docs/, and look over https://socket.io/docs/emit-cheatsheet/. In order to look up users by their username or email address, you may need to implement a login system. To send messages privately, you will need the server to keep track of socket ids for each user when they sign on to the application.
+Thoroughly read through the documents at https://socket.io/docs/, and look over https://socket.io/docs/emit-cheatsheet/. In order to look up users by their username or email address, you may need to implement a login system. To send messages privately, you will need the server to keep track of socket ids for each user when they sign on to the application. For this, you may want to implement a database such as mongodb: https://www.mongodb.com/what-is-mongodb. 
+
+### Office Hours
+https://calendar.google.com/calendar?cid=YnUuZWR1XzR0aDhycjVrOWMxajN0cnRmZjVxdmgyaTg0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20
 
 
 ## Getting started
